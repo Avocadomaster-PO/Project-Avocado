@@ -1,0 +1,25 @@
+import tkinter as avocado
+from random import randint
+
+
+
+class field():
+    def __init__(self):
+        self.root = avocado.Tk()
+        self.root.geometry("1000x1000")
+        self.target()
+
+    def target(self):
+        for i in range(20):
+
+            x=randint(0,900)
+            y=randint(0,900)
+
+            self.cible1 = avocado.Button(self.root,text = "      ", bg = d )
+            self.cible1.place(x=x, y=y)
+
+
+        self.root.mainloop()
+
+app=field()
+
